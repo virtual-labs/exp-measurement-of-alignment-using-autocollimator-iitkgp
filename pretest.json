@@ -1,0 +1,60 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Autocollimator is used to inspect",
+      "answers": {
+        "a": "Hardness",
+        "b": "Roughness",
+        "c": "Angle ",
+        "d": "Thickness"
+      },
+      "correctAnswer": "c",
+      "difficulty": "Beginner"
+    },
+    {
+      "question": "Which optical phenomenon is necessary for the functioning of an autocollimator?",
+      "answers": {
+        "a": "Diffraction",
+        "b": "Refraction",
+        "c": "Interference",
+        "d": "Reflection"
+      },
+      "correctAnswer": "d",
+      "difficulty": "Beginner"
+    },
+    {
+      "question": "How does an auto collimator detect angular deviations?",
+      "answers": {
+        "a": "Analyzing the interference patterns of light",
+        "b": "Measuring the refraction of light through prism",
+        "c": "Detecting the changes in the intensity of reflected light",
+        "d": "None of the aboveAnalysing the diffraction patterns of light"
+      },
+      "correctAnswer": "c",
+      "difficulty": "Beginner"
+    },
+    {
+      "question": "Which of the following components allow the observer to view the target in autocollimator?",
+      "answers": {
+        "a": "Light source",
+        "b": "Objective lens",
+        "c": "Reflector",
+        "d": "Eyepiece"
+      },
+      "correctAnswer": "d",
+      "difficulty": "Beginner"
+    },
+    {
+      "question": "What type of instrument is an autocollimator?",
+      "answers": {
+        "a": "Contact gauge",
+        "b": "Non-contact optical instrument",
+        "c": "Both a & b",
+        "d": "None of the above"
+      },
+      "correctAnswer": "b",
+      "difficulty": "Beginner"
+    }
+  ]
+}

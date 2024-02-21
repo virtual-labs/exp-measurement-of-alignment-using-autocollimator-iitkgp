@@ -1,0 +1,60 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "What is the purpose of using a reflector in an autocollimator?",
+      "answers": {
+        "a": "Increase the intensity of the reflected light beam",
+        "b": "Direct reflect light beam along its original path",
+        "c": "Disperse the light to spectral components",
+        "d": "To polarise the incident light beam"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the function of beam splitter in autocollimator?",
+      "answers": {
+        "a": "Increase the intensity of light beam",
+        "b": "To split the return light into two separate paths",
+        "c": "Magnify the image through observed through the eyepiece",
+        "d": "Direct the light beam towards target graticule"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the function of optical micrometer in autocollimator?",
+      "answers": {
+        "a": "Adjust the focal length of the collimating lens",
+        "b": "Measure the intensity of the reflected beam",
+        "c": "Measure the angular deviations of the reflected beam",
+        "d": "None of the above"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Why target graticule is kept  perpendicular to the optical axis in autocollimator?",
+      "answers": {
+        "a": "Improve the resolution of angular measurements",
+        "b": "To ensure accurate alignment of the reflected beam",
+        "c": "For enhancing the visibility of the reflected beam",
+        "d": "To minimize the errors in measurement"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "An auto collimator is set up with a beam deviation 0.03 radians. If the focal length of the collimating lens is 60 cm. What is displacement of reflected beam on scale?",
+      "answers": {
+        "a": "20 mm",
+        "b": "2.5 cm",
+        "c": "3 cm",
+        "d": "1.8 cm"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    }
+  ]
+}
