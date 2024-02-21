@@ -1,13 +1,264 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-		<!-- Your code goes here-->
+<!-- This HTML page and script files are developed by
+    Piyali Chattopadhyay
+    Project Scientist-Technical,
+    Virtual Labs IIT Kharagpur.-->
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
-</body>
-</html>
+<!DOCTYPE html>
+<html lang="en"><!--html tag start-->
+<head>
+    <title>Measurement of alignment using Autocollimator / Roller Set </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+
+   
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script  src="./js/acm.js">   </script>
+  
+
+  
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Knob/1.2.13/jquery.knob.min.js"></script>-->
+
+
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.2.1/math.js"></script>
+  <script src=" https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.2.1/math.min.js  "></script>
+ 
+ 
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"> </script>
+
+<link rel="stylesheet" href="./css/acm.css">
+
+	
+
+
+  <style>
+	
+	
+	canvas {	
+	max-width:100%;
+	}
+	
+	
+  </style>
+  
+  
+  
+</head>
+<body><!--body tag start-->
+    <div class="container my-3 text-primary text-center "><!--First Container under body tag start-->
+       
+        <hr>
+        <div class="row"><!--2nd row under 1st container start-->
+            
+            <div class="col-md-12"><!--2nd col under 2nd row start-->
+                <p class="h1"> <b>Simulation</b> </p>
+            </div><!--2nd col under 2nd row end-->
+           
+        </div><!--2nd row under 1st container end-->
+        <hr>
+       
+    </div><!--First Container under body tag end-->
+    
+   
+	
+    <div class="container text-left "><!--3rd Container under body tag start-->
+      <div class="row"><!--First row under 3rd container start-->
+        <!-- <div class="col-md-1"></div>--><!--First col under 3rd container start& end-->
+        <div class="col-md-12"><!--2nd col under 3rd container start-->
+            <p class="text-center bg-success"> <a class="nav-link" data-bs-toggle="tab"  id="instcontrol" style="background-color:#128BD9"  ><span class=" h3 text-dark"> Instructions </span></a>
+              <div id="inst" style="display:none">
+			  <ol>
+                      
+					  <li> First click on the green power button to switch on the monochromatic light source. The mirror will be at the 
+					  zero position first (0-110 mm). There will be missalignment between target graticule and setting graticule
+					  horizontal lines in the reflected image on the mirror. </li><br/>					  
+					  
+					  <li>The micrometer adjustment is provided for controlling the coincidence of setting graticule and the target image photo-electrically.
+						Click on the ratchet of the micrometer untill the horizontal lines of setting and target graticule coincides.</li><br/>
+					 
+					 <li>Click on 'Calculate' button to observe the measurements. Click on 'Table' at the bottom of the page and click on 'Show Table' button to tabulate the readings.</li><br/>
+
+					 <li>Switch off the power button. Now move the mirror to next position (110-220 mm) in the left by clicking on the left side arrow key of
+					 'Move Mirror' button once. Follow steps 1-3 to note the second observation.</li><br/> 
+					 
+					 <li>Follow step 4 again for positions 220-330, 330-440, 440-550, 550-660, 660-770 and 770-880 mm. At the end eight observations 
+					 will be generated.</li><br/>
+					  
+					 <li>Now click on "Cumulative Error (&micro;m) Vs. Position (mm)" or "Error from horizontal straight line (&micro;m) Vs. Position (mm)" under 'Plot' to observe the plots.</li><br/>
+					
+					<li>Click on 'Clear' button.</li><br/>
+					
+					<br/><br/>
+					</ol>
+					
+		   </div>
+            </p> 
+          </div><!--2nd col under 3rd container end-->
+		  
+        <!--<div class="col-md-1"></div><!--3rd col under 3rd container start& end-->
+      </div><!--First row under 3rd container end-->
+    </div><!--3rd Container under body tag end-->
+	
+    <div class="container p-3 my-5 text-center " id="canvas" ><!--Fourth container under body tag start-->
+	
+	<div class="row ">
+	<div class="col-md-1"></div>
+	<div class="col-md-10">
+			<div class="card" style=" width:100%;background-color:pink" > 
+			
+			<div class="card-body">
+			<span class="card-title bg-light"> Measurements </span><br/><br/>
+
+			<span class="card-text" >Position ( mm ):&nbsp;<input type="text" value="0" id ="position" style=" width:20%;text-align:center" readonly=readonly/><br/><br/></span>
+
+			<span class="card-text" >Forward ( Min. ):&nbsp;<input type="number" value="0" id ="Fm" style=" width:20%;text-align:center" readonly=readonly/><br/><br/></span>
+
+			<span class="card-text" >Forward ( Sec. ):&nbsp;<input type="number" value="0" id ="Fs" style=" width:20%;text-align:center" readonly=readonly/><br/><br/></span>
+
+			<span class="card-text" >Forward ( (total)Sec. ):&nbsp;<input type="number" value="0" id ="F" style=" width:20%;text-align:center" readonly=readonly/><br/><br/></span>
+
+			<div class="d-inline-flex p-2"> 
+			<div class="p-2"><button  type="button"   id="calcbtn" class="btn btn-success " onclick="calculate()" disabled="true">Calculate</button></div>
+			<div class="p-2"><button  type="button"   id="Tbtn" class="btn btn-info " onclick="CreateTable()" disabled="true">Show Table</button></div>
+			<div class="p-2"><div class="dropdown">
+				  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+					Plot
+				  </button>
+				  <ul class="dropdown-menu">
+					<li><a class="dropdown-item" onclick="plot1()">Cumulative Error (&micro;m) Vs. Position (mm) </a></li>
+					<li><a class="dropdown-item" onclick="plot2()">Error from horizontal straight line (&micro;m) Vs. Position (mm)</a></li>
+				  </ul>
+				</div></div>
+			<div class="p-2"><button  type="button" class="btn btn-danger " onclick="Refresh()" >Clear</button></div>
+			</div>
+			
+			</div></div></div>
+			
+			<div class="col-md-1"></div>
+			</div>
+		</div>	
+			
+			<div class="row my-5">
+
+	
+			<div class="col-md-12">
+			
+			<div   class="img-container">
+			
+			<img  src="./images/base.png">
+			<img id="rular" src="./images/rular.png">
+			<!-- <img id="rfbase" src="./images/rfbase.png">
+			<img id="rfbase2" src="./images/rfbase2.png"> -->
+			<img id="mirror" src="./images/mirrorset.png">
+			<img id="sw" src="./images/poff.png" onclick="onoff()">
+			<img id="acm" src="./images/acmfixed.png">
+			<img id="camera" src="./images/camera.png">
+			<img id="minscale" src="./images/minscale.png">
+			<img id="minpointer" src="./images/minscale_pointer.png">
+			<img id="secscale" src="./images/secscale10.png">
+			<img id="secpointer" src="./images/secscale_pointer.png">
+			<img id="camtop" src="./images/secscale_ratchet.png" onclick="secscaleRotation();simulation()" style="pointer-events:none;">
+			<img id="lightcir" src="./images/lightimg1.png">
+			
+			
+							
+<button type="button" id="mbtn"  class="btn btn-success " style="pointer-events:auto;" onclick="alertMirror()">
+ <i class="fa fa-angle-double-left" id="rbtnP" onclick="moveLeft()" style="color:white;pointer-events:auto"></i>&nbsp;Move Mirror&nbsp;<i class="fa fa-angle-double-right" id="rbtnM" onclick="moveRight()" style="color:white;pointer-events:none"></i>
+</button>
+			</div>
+			
+			
+			<input type="number" id="movechk" min="1" value="1" max="10" readonly=readonly style="visibility:hidden">
+			
+	</div>
+	
+	<!--<button class="btn btn-success" onclick="Dw_Tester()">Simulate</button>-->
+	</div>
+	
+ <div class="container p-3 my-5 text-center ">
+	 <div class="row"><!--- 2nd row under fourth container start--->		
+		
+			<div class="col-md-12 "><!--2nd col under 2nd row start -->
+			
+			<input id="achk" value="0" style="visibility:hidden;"><!--Cumulative Rise/Fall-->
+			<input id="cchk" value="0" style="visibility:hidden;"><!--Adjustment-->
+			
+			<br/>
+			<div><a class="nav-link" data-bs-toggle="tab"  id="myTables" style="background-color:#128BD9" ><span class=" h3 text-dark"> Table </span></a>
+			
+			<table id="obsTable" style="display:none;width:100%">			
+				
+				  <tr>
+					<th>Sl No.</th>
+					<th>Position (mm)</th> 
+					<th>Forward (Min.)</th>
+					<th>Forward (Sec.)</th>
+					<th>Forward (total(Sec.))</th>
+					<th>Diff. from first value (sec)</th>
+					<th>Rise/Fall over 110mm base length (&micro;m)</th>
+					<th>Cumulative Rise and fall (&micro;m)</th>
+					<th>Adjustment (&micro;m)</th>
+					<th>Error (&micro;m)</th>
+				  </tr>
+				  
+			</table>
+			
+			</div>	
+				</div>				
+		
+	</div><!--- 2nd row under fourth container end--->
+
+
+	 <div class="row justify-content-center"><!-----------------------graph T vs. w----------------------------------------->
+		
+	 
+			<div class="col-md-12">
+				
+				<div align="center" id="myPlot" style="width:100%;max-width:700px;padding-left:10%"></div>				
+				
+			</div>			
+		
+	</div>
+
+	
+	
+          <!-- Code End here-->
+        </div><!--Fourth container under body tag end-->
+          
+      <!--</div>
+    </div>-->
+
+    <div class="container text-primary text-center "><!--Last and fifth container under body tag start-->
+      <div class="row">
+        <footer>
+          <div class="row ce">
+            <div class="col-sm-12">
+              <p class="h5"><i> Copyright ©2022 <a href="http://vlabs.iitkgp.ac.in/vlt/">Virtual Labs IIT Kharagpur</a> </i><br><br>
+              <a href="../../license/index.html" target="_blank"> Licensing Terms </a>
+            </p>
+            </div>
+          </div>
+        </footer>
+      </div>
+  </div><!--Last and fifth container under body tag end-->
+  
+  
+
+</body><!--body tag end-->
+
+ 
+</html><!--html tag end-->
