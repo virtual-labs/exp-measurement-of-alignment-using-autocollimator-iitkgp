@@ -1,0 +1,116 @@
+
+
+
+
+.img-container{	
+	position:relative;
+	display:inline-block;	
+}
+
+
+#rular{
+position: absolute;
+left: 3%;
+top: 76.5%;
+width: 85%;
+}
+#rfbase{
+position: absolute;
+left: 72.5%;
+top: 19.6%;
+width: 18%;
+}
+
+#rfbase2{
+position: absolute;
+left: 78%;
+top: 62.8%;
+width: 8.5%;
+}
+
+#mirror{
+position: absolute;
+left: 72.4%;/*decrease by 8.4%*/
+top: 19%;
+width: 18%;
+z-index: 2;
+}
+
+#acm{
+position: absolute;
+left: 93.4%;
+top: 7%;
+width: 94%;
+
+}
+#camera{
+position: absolute;
+left: 145.4%;
+top: 16%;
+width: 28%;
+}
+#minscale{
+position: absolute;
+left: 156.4%;
+top: 34%;
+width: 3%;
+}
+#minpointer{
+position: absolute;
+left: 159.5%;
+top: 44%;
+width: 2%;
+}
+#secscale{
+position: absolute;
+left: 156.4%;
+top: 19%;
+width: 14%;
+}
+#secpointer{
+position: absolute;
+left: 160%;
+top: 30.5%;
+width: 3%;
+}
+#camtop{
+position: absolute;
+left: 147%;
+top: 7.5%;
+width: 25%;
+}
+#lightcir{
+display:none;
+position: absolute;
+left: 78.2%;
+top: 24.5%;
+width: 12%;
+opacity: 0.5;
+z-index: 3;
+}
+#sw{
+/*display: none; */
+position: absolute;
+left: 148%;
+top: 20.5%;
+width: 5%;
+/* opacity: 0.6; */
+z-index: 3;
+}
+#mbtn{
+position:absolute;
+left:36%;	
+}
+
+/*-common part--*/
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}  
+tr:nth-child(odd) {
+  background-color: #F0FBCC;
+} 
