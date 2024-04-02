@@ -10,8 +10,9 @@ Figure 1. Gear tooth vernier caliper with spur gear
 horizontal lines in the reflected image on the reflector. 
 
 <div align="center">
-<img class="img-fluid"  src="./images/conn.png" alt=""><br> 
-Figure 1. Measurement of alignment using Autocollimator simulation model          
+<img class="img-fluid"  src="./images/conn.png" alt="">
+
+<b>Figure 1. Measurement of alignment using Autocollimator simulation model</b>        
 </div>
 
 2. The micrometer adjustment is provided for controlling the coincidence of setting graticule and the target image photo-electrically. Click on the ratchet of the micrometer untill the horizontal lines of setting and target graticule coincides.
