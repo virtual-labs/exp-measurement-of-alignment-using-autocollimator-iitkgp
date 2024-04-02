@@ -11,7 +11,7 @@
 #rular{
 position: absolute;
 left: 3%;
-top: 76.5%;
+top: 84.5%;
 width: 85%;
 }
 #rfbase{
@@ -35,6 +35,15 @@ top: 19%;
 width: 18%;
 z-index: 2;
 }
+#reflector{
+position: absolute;
+left: 80.4%;
+top: 54%;
+width: 18%;
+z-index: 2;
+color: white;
+font-size: small;
+}
 
 #acm{
 position: absolute;
@@ -48,6 +57,20 @@ position: absolute;
 left: 145.4%;
 top: 16%;
 width: 28%;
+}
+#eye{
+position: absolute;
+left: 168.4%;
+top: 33%;
+width: 10%;
+}
+#eyepis{
+position: absolute;
+    left: 163.4%;
+    top: 52%;
+    width: 10%;
+    color: white;
+	font-size:small;
 }
 #minscale{
 position: absolute;
@@ -79,6 +102,13 @@ left: 147%;
 top: 7.5%;
 width: 25%;
 }
+#mic{
+position: absolute;
+left: 162%;
+top: 9.5%;
+width: 25%;
+font-size: small;
+}
 #lightcir{
 display:none;
 position: absolute;
@@ -86,6 +116,22 @@ left: 78.2%;
 top: 24.5%;
 width: 12%;
 opacity: 0.5;
+z-index: 3;
+}
+#lzoom{
+display: none;
+position: absolute;
+left: 176.2%;
+top: -14.5%;
+width: 20%;
+}
+#lightzoom{
+display: none;
+position: absolute;
+left: 178.2%;
+top: -3.5%;
+width: 17%;
+opacity: 0.7;
 z-index: 3;
 }
 #sw{
