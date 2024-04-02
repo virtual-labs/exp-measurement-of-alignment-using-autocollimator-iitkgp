@@ -38,6 +38,8 @@ function onoff(){
 	if(document.getElementById('sw').src.match('./images/poff.png')){
 		document.getElementById('sw').src = './images/pon.png';
 		$('#lightcir').css('display','block');
+		$('#lightzoom').css('display','block');
+		$('#lzoom').css('display','block');
 		document.getElementById('lightcir').src = './images/lightimg1.png';
 		document.getElementById('camtop').style['pointer-events'] = "auto";
 		document.getElementById('rbtnP').style['pointer-events'] = "none";
@@ -46,6 +48,9 @@ function onoff(){
 	else if(document.getElementById('sw').src.match('./images/pon.png')){
 		document.getElementById('sw').src = './images/poff.png';
 		$('#lightcir').css('display','none');
+		$('#lightzoom').css('display','none');
+		$('#lzoom').css('display','none');
+		document.getElementById('lightzoom').src = './images/lmz1.png';
 		document.getElementById('camtop').style['pointer-events'] = "none";
 		if(document.getElementById('movechk').value !=8){
 		document.getElementById('rbtnP').style['pointer-events'] = "auto";
@@ -62,13 +67,15 @@ function alertMirror(){
 	}	
 }
 
-var countL = 0,countC = 0;
+var countL = 0,countC = 0,countP = 0;
 function moveLeft(){
 document.getElementById('rbtnM').style['pointer-events'] = "auto";
 countL-=8.4;
 countC-=8.4;
+countP-=8.4;
 document.getElementById('mirror').style.left = math.add(72.4,countL)+ "%";	
 document.getElementById('lightcir').style.left = math.add(78.2,countC)+ "%";
+document.getElementById('reflector').style.left = math.add(80.4,countP)+ "%";
 document.getElementById('movechk').stepUp(1);
 if(document.getElementById('movechk').value == 8){
 	document.getElementById('rbtnP').style['pointer-events'] = "none";
@@ -78,8 +85,10 @@ function moveRight(){
 document.getElementById('rbtnP').style['pointer-events'] = "auto";
 countL+=8.4;
 countC+=8.4;
+countP+=8.4;
 document.getElementById('mirror').style.left = math.add(72.4,countL)+ "%";	
 document.getElementById('lightcir').style.left = math.add(78.2,countC)+ "%";
+document.getElementById('reflector').style.left = math.add(80.4,countP)+ "%";
 document.getElementById('movechk').stepDown(1);	
 if(document.getElementById('movechk').value == 1){
 	document.getElementById('rbtnM').style['pointer-events'] = "none";
@@ -112,10 +121,12 @@ if(pos == 1 && imCount == 10){///0-110 mm
 	document.getElementById('secpointer').style.left = 160+'%';
 	document.getElementById('minpointer').style.top = 47+'%';
 	document.getElementById('lightcir').src = './images/lightimg2.png';
+	document.getElementById('lightzoom').src = './images/lmz2.png';
 	document.getElementById('calcbtn').disabled = false;
 }
 else if(pos == 1 && imCount != 10){
 document.getElementById('lightcir').src = './images/lightimg1.png';
+document.getElementById('lightzoom').src = './images/lmz1.png';
 document.getElementById('calcbtn').disabled = true;
 document.getElementById('Tbtn').disabled = true;	
 }
@@ -124,10 +135,12 @@ if(pos == 2 && imCount == 11){///110-220 mm
 	document.getElementById('secpointer').style.left = 158.2+'%';
 	document.getElementById('minpointer').style.top = 49+'%';
 	document.getElementById('lightcir').src = './images/lightimg2.png';
+	document.getElementById('lightzoom').src = './images/lmz2.png';
 	document.getElementById('calcbtn').disabled = false;
 }
 else if(pos == 2 && imCount != 11){
 document.getElementById('lightcir').src = './images/lightimg1.png';
+document.getElementById('lightzoom').src = './images/lmz1.png';
 document.getElementById('calcbtn').disabled = true;
 document.getElementById('Tbtn').disabled = true;	
 }
@@ -136,10 +149,12 @@ if(pos == 3 && imCount == 0){///220-330 mm
 	document.getElementById('secpointer').style.left = 169+'%';
 	document.getElementById('minpointer').style.top = 49+'%';
 	document.getElementById('lightcir').src = './images/lightimg2.png';
+	document.getElementById('lightzoom').src = './images/lmz2.png';
 	document.getElementById('calcbtn').disabled = false;
 }
 else if(pos == 3 && imCount != 0){
 document.getElementById('lightcir').src = './images/lightimg1.png';
+document.getElementById('lightzoom').src = './images/lmz1.png';
 document.getElementById('calcbtn').disabled = true;	
 document.getElementById('Tbtn').disabled = true;
 }
@@ -148,10 +163,12 @@ if(pos == 4 && imCount == 10){///330-440 mm
 	document.getElementById('secpointer').style.left = 162+'%';
 	document.getElementById('minpointer').style.top = 50+'%';
 	document.getElementById('lightcir').src = './images/lightimg2.png';
+	document.getElementById('lightzoom').src = './images/lmz2.png';
 	document.getElementById('calcbtn').disabled = false;
 }
 else if(pos == 4 && imCount != 10){
 document.getElementById('lightcir').src = './images/lightimg1.png';
+document.getElementById('lightzoom').src = './images/lmz1.png';
 document.getElementById('calcbtn').disabled = true;	
 document.getElementById('Tbtn').disabled = true;
 }
@@ -160,10 +177,12 @@ if(pos == 5 && imCount == 7){///440-550 mm
 	document.getElementById('secpointer').style.left = 168+'%';
 	document.getElementById('minpointer').style.top = 50+'%';
 	document.getElementById('lightcir').src = './images/lightimg2.png';
+	document.getElementById('lightzoom').src = './images/lmz2.png';
 	document.getElementById('calcbtn').disabled = false;
 }
 else if(pos == 5 && imCount != 7){
 document.getElementById('lightcir').src = './images/lightimg1.png';
+document.getElementById('lightzoom').src = './images/lmz1.png';
 document.getElementById('calcbtn').disabled = true;	
 document.getElementById('Tbtn').disabled = true;
 }
@@ -172,10 +191,12 @@ if(pos == 6 && imCount == 12){///550-660 mm
 	document.getElementById('secpointer').style.left = 169+'%';
 	document.getElementById('minpointer').style.top = 52+'%';
 	document.getElementById('lightcir').src = './images/lightimg2.png';
+	document.getElementById('lightzoom').src = './images/lmz2.png';
 	document.getElementById('calcbtn').disabled = false;
 }
 else if(pos == 6 && imCount != 12){
 document.getElementById('lightcir').src = './images/lightimg1.png';
+document.getElementById('lightzoom').src = './images/lmz1.png';
 document.getElementById('calcbtn').disabled = true;	
 document.getElementById('Tbtn').disabled = true;
 }
@@ -184,10 +205,12 @@ if(pos == 7 && imCount == 0){///660-770 mm
 	document.getElementById('secpointer').style.left = 169+'%';
 	document.getElementById('minpointer').style.top = 52+'%';
 	document.getElementById('lightcir').src = './images/lightimg2.png';
+	document.getElementById('lightzoom').src = './images/lmz2.png';
 	document.getElementById('calcbtn').disabled = false;
 }
 else if(pos == 7 && imCount != 0){
 document.getElementById('lightcir').src = './images/lightimg1.png';
+document.getElementById('lightzoom').src = './images/lmz1.png';
 document.getElementById('calcbtn').disabled = true;	
 document.getElementById('Tbtn').disabled = true;
 }
@@ -196,10 +219,12 @@ if(pos == 8 && imCount == 7){///770-880 mm
 	document.getElementById('secpointer').style.left = 166+'%';
 	document.getElementById('minpointer').style.top = 53+'%';
 	document.getElementById('lightcir').src = './images/lightimg2.png';
+	document.getElementById('lightzoom').src = './images/lmz2.png';
 	document.getElementById('calcbtn').disabled = false;
 }
 else if(pos == 8 && imCount != 7){
 document.getElementById('lightcir').src = './images/lightimg1.png';
+document.getElementById('lightzoom').src = './images/lmz1.png';
 document.getElementById('calcbtn').disabled = true;	
 document.getElementById('Tbtn').disabled = true;
 }				
@@ -389,7 +414,7 @@ xaxis: {
     linewidth: 2,
 	rangemode:'tozero',
     title: {
-      text: 'Cumulative Error( &#xb5;m )',
+      text: 'Cumulative Error (&#xb5;m)',
 	  
       font: {
         family: 'Times New Roman, monospace',

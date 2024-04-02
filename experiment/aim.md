@@ -1,4 +1,4 @@
 ## Aim of the experiment
 
-Measurement of alignment using autocollimator.
+Determine the angular deviations of flat surfaces by using auto collimator.
                 
