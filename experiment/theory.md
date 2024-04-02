@@ -10,7 +10,7 @@ Autocollimator works on the principle of reflection of light. It uses a monochro
 <div align="center">
 <img src="images/figure1.png" class="img-fluid">
 
-Figure 1:- Reflector is at 90 &deg; with the direction of rays
+<b>Figure 1:- Reflector is at 90 &deg; with the direction of rays</b>
 </div>
 
 
@@ -19,7 +19,7 @@ However, when the object is tilted, reflected rays create an angle with incident
 <div align="center">
 <img src="images/figure2.png" class="img-fluid">
 
-Figure 2:- Reflector is not at right angles to the direction of the rays
+<b>Figure 2:- Reflector is not at right angles to the direction of the rays</b>
 </div>
 
 **Working of Autocollimator**
@@ -29,7 +29,7 @@ Autocollimator mainly consists of three main parts i.e. micrometer, lightning un
 <div align="center">
 <img src="images/figure3.png" class="img-fluid">
 
-Figure 3:- Line diagram of auto collimator
+<b>Figure 3:- Line diagram of auto collimator</b>
 </div>
 
 
