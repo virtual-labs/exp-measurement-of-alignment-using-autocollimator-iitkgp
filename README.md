@@ -12,7 +12,7 @@
 
 ### About the Experiment
 
-Screw threads are commonly used in mechanical assemblies to provide secure connections and transmit force. Accurate measurement of their key parameters, including major diameter, is crucial for ensuring proper functioning and quality control.
+Autocollimators are optical instruments used to measure small angular differences, and  also used to measure  straightness, flatness, and alignment. Autocollimator works on the principle of reflection of light. It uses a monochromatic light source emitting a beam of light rays directed towards a beam reflector.
 
 
 <b>Subject matter expertise | <b> **Dr. Poonam Sundriyal**
