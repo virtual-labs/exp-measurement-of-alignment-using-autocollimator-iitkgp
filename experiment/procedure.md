@@ -6,6 +6,8 @@
 Figure 1. Gear tooth vernier caliper with spur gear          
 </div> -->
 
+**Steps to perform the simulation**
+
 1. First click on the green power button to switch on the monochromatic light source. The reflector will be at the zero position first (0-110 mm). There will be missalignment between target graticule and setting graticule
 horizontal lines in the reflected image on the reflector. 
 
