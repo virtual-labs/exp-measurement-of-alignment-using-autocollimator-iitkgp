@@ -29,7 +29,7 @@ When lamp illuminates the target graticule, light rays diverge out and is direct
 
 
 <div align="center">
-<img src="images/figure3.png" class="img-fluid">
+<img src="images/figure3.png" style="width:80%">
 
 <b>Fig. 3. Line diagram of autocollimator</b>
 </div>
