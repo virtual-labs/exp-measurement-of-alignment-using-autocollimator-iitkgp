@@ -326,7 +326,7 @@ function CreateTable() {
 	c = d;
 	$('#cchk').val(c);
 	}
-	arr[8] = c;
+	arr[8] = c.toFixed(2);
 	arr[9] = math.subtract(arr[8],arr[7]);;
    
 	
