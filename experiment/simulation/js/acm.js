@@ -298,8 +298,8 @@ function CreateTable() {
     arr[2] = $('#Fm').val();
 	arr[3] = $('#Fs').val();
 	arr[4] = $('#F').val();
-	arr[5] = math.subtract(arr[4],761);
-	arr[6] = math.multiply(arr[5],0.5);
+	arr[5] = math.subtract(arr[4],761).toFixed(2);
+	arr[6] = math.multiply(arr[5],0.5).toFixed(2);
 	///cumulative rise/fall
 	var a,b;
 	if(arr[6]== -28.25){
