@@ -1,12 +1,8 @@
 ## Procedure
 
-
-<!-- <div align="center">
-<img class="img-fluid"  src="./images/conn.png" alt=""><br> 
-Figure 1. Gear tooth vernier caliper with spur gear          
-</div> -->
-
 **Steps to perform the simulation**
+
+To follow instructions on the simulation page click on the blue Instructions tab there.
 
 1. First click on the green power button to switch on the monochromatic light source. The reflector will be at the zero position first (0-110 mm). There will be missalignment between target graticule and setting graticule
 horizontal lines in the reflected image on the reflector. 
@@ -14,7 +10,7 @@ horizontal lines in the reflected image on the reflector.
 <div align="center">
 <img class="img-fluid"  src="./images/conn.png" alt="">
 
-<b>Figure 1. Measurement of alignment using Autocollimator simulation model</b>        
+<b>Fig. 1. Measurement of alignment using Autocollimator simulation model</b>        
 </div>
 
 2. The micrometer adjustment is provided for controlling the coincidence of setting graticule and the target image photo-electrically. Click on the ratchet of the micrometer untill the horizontal lines of setting and target graticule coincides.

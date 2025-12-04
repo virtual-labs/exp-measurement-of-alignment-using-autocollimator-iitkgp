@@ -1,4 +1,4 @@
 ## Aim of the experiment
 
-Determine the angular deviations of flat surfaces by using auto collimator.
+Measurement of flatness of a surface using Autocollimator.
                 
