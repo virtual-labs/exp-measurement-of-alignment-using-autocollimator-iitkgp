@@ -1,1 +1,1 @@
-## Measurement of alignment using Autocollimator / Roller Set  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <!-- <img src="images/iitkgp.png" width="3%" /> -->
+## Measurement of flatness of a surface using Autocollimator  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
