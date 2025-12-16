@@ -7,7 +7,7 @@
 <b>Discipline | <b> Mechanical Engineering 
 :--|:--|
 <b> Lab | <b>Metrology and Measurement Laboratory 
-<b> Experiment|     <b>Measurement of alignment using Autocollimator / Roller Set and Experiment 8 
+<b> Experiment|     <b>Measurement of flatness of a surface using Autocollimator and Experiment 8 
 
 
 ### About the Experiment

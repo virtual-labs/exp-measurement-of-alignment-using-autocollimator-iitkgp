@@ -2,7 +2,7 @@
 
 Autocollimators are optical instruments used to measure small angular differences, and  also used to measure  straightness, flatness, and alignment. They are  highly sensitive to small  angular changes. It works as a  collimator and an infinity telescope together. These are mostly used to measure deflections in a surface.
 
-**Basic   principle:**
+**Basic principle:**
 
 Autocollimator works on the principle of reflection of light. It uses a monochromatic light source emitting a beam of light rays directed towards a beam reflector placed on the surface to be tested. Upon hitting the reflector,  the  reflected beam is converged  to a plane that can be viewed. If the surface is flat and devoid of angular deviations, the rays reflect back along their original path, converging at a plane at the focal distance from the converging lens as shown in Fig. 1. 
 
