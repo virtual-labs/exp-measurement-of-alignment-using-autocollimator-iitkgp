@@ -13,7 +13,7 @@ horizontal lines in the reflected image on the reflector.
 <b>Fig. 1. Measurement of alignment using Autocollimator simulation model</b>        
 </div>
 
-2. The micrometer adjustment is provided for controlling the coincidence of setting graticule and the target image photo-electrically. Click on the ratchet of the micrometer untill the horizontal lines of setting and target graticule coincides.
+2. Click on the ratchet of the micrometer until the horizontal lines of setting and target graticule coincides.
 
 3. Click on 'Calculate' button to observe the measurements. Click on 'Table' at the bottom of the page and click on 'Show Table' button to tabulate the readings.
 

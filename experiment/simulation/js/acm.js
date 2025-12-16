@@ -75,7 +75,7 @@ countC-=8.4;
 countP-=8.4;
 document.getElementById('mirror').style.left = math.add(72.4,countL)+ "%";	
 document.getElementById('lightcir').style.left = math.add(78.2,countC)+ "%";
-document.getElementById('reflector').style.left = math.add(80.4,countP)+ "%";
+document.getElementById('reflector').style.left = math.add(77.4,countP)+ "%";
 document.getElementById('movechk').stepUp(1);
 if(document.getElementById('movechk').value == 8){
 	document.getElementById('rbtnP').style['pointer-events'] = "none";
@@ -88,7 +88,7 @@ countC+=8.4;
 countP+=8.4;
 document.getElementById('mirror').style.left = math.add(72.4,countL)+ "%";	
 document.getElementById('lightcir').style.left = math.add(78.2,countC)+ "%";
-document.getElementById('reflector').style.left = math.add(80.4,countP)+ "%";
+document.getElementById('reflector').style.left = math.add(77.4,countP)+ "%";
 document.getElementById('movechk').stepDown(1);	
 if(document.getElementById('movechk').value == 1){
 	document.getElementById('rbtnM').style['pointer-events'] = "none";
