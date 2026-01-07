@@ -4,8 +4,9 @@
 
 To follow instructions on the simulation page click on the blue Instructions tab there.
 
-1. First click on the green power button to switch on the monochromatic light source. The reflector will be at the zero position first (0-110 mm). There will be missalignment between target graticule and setting graticule
-horizontal lines in the reflected image on the reflector. 
+<b>Measurement of flatness of a surface using Autocollimator:</b>
+
+1. First click on the green power button to switch on the monochromatic light source. The reflector will be at the zero position first (0-110 mm). There will be missalignment between target graticule and setting graticule horizontal lines in the reflected image on the reflector. 
 
 <div align="center">
 <img class="img-fluid"  src="./images/conn.png" alt="">
