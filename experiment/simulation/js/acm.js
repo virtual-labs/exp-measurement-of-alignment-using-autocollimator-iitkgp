@@ -117,14 +117,32 @@ function simulation(){
 
 var pos = document.getElementById('movechk').value;
 
-if(pos == 1 && imCount == 10){///0-110 mm
+if(pos == 1 && imCount == 7){///0-110 mm
 	document.getElementById('secpointer').style.left = 160+'%';
 	document.getElementById('minpointer').style.top = 47+'%';
 	document.getElementById('lightcir').src = './images/lightimg2.png';
 	document.getElementById('lightzoom').src = './images/lmz2.png';
 	document.getElementById('calcbtn').disabled = false;
 }
-else if(pos == 1 && imCount != 10){
+if(pos == 1 && imCount == 4){
+document.getElementById('lightcir').src = './images/lightimg1.png';
+document.getElementById('lightzoom').src = './images/lmz11.png';
+document.getElementById('calcbtn').disabled = true;
+document.getElementById('Tbtn').disabled = true;	
+}
+if(pos == 1 && imCount == 5){
+document.getElementById('lightcir').src = './images/lightimg11.png';
+document.getElementById('lightzoom').src = './images/lmz111.png';
+document.getElementById('calcbtn').disabled = true;
+document.getElementById('Tbtn').disabled = true;	
+}
+if(pos == 1 && imCount == 6){
+document.getElementById('lightcir').src = './images/lightimg11.png';
+document.getElementById('lightzoom').src = './images/lmz1111.png';
+document.getElementById('calcbtn').disabled = true;
+document.getElementById('Tbtn').disabled = true;	
+}
+if(pos == 1 && imCount != 4 && imCount != 5 && imCount != 6 && imCount != 7){
 document.getElementById('lightcir').src = './images/lightimg1.png';
 document.getElementById('lightzoom').src = './images/lmz1.png';
 document.getElementById('calcbtn').disabled = true;
@@ -138,7 +156,31 @@ if(pos == 2 && imCount == 11){///110-220 mm
 	document.getElementById('lightzoom').src = './images/lmz2.png';
 	document.getElementById('calcbtn').disabled = false;
 }
-else if(pos == 2 && imCount != 11){
+ if(pos == 2 && imCount == 7){
+document.getElementById('lightcir').src = './images/lightimg1.png';
+document.getElementById('lightzoom').src = './images/lmz1.png';
+document.getElementById('calcbtn').disabled = true;
+document.getElementById('Tbtn').disabled = true;	
+}
+ if(pos == 2 && imCount == 8){
+document.getElementById('lightcir').src = './images/lightimg11.png';
+document.getElementById('lightzoom').src = './images/lmz11.png';
+document.getElementById('calcbtn').disabled = true;
+document.getElementById('Tbtn').disabled = true;	
+}
+ if(pos == 2 && imCount == 9){
+document.getElementById('lightcir').src = './images/lightimg11.png';
+document.getElementById('lightzoom').src = './images/lmz111.png';
+document.getElementById('calcbtn').disabled = true;
+document.getElementById('Tbtn').disabled = true;	
+}
+ if(pos == 2 && imCount == 10){
+document.getElementById('lightcir').src = './images/lightimg11.png';
+document.getElementById('lightzoom').src = './images/lmz1111.png';
+document.getElementById('calcbtn').disabled = true;
+document.getElementById('Tbtn').disabled = true;	
+}
+if(pos == 2 && imCount != 7 && imCount != 8 && imCount != 9 && imCount!=10 && imCount != 11){
 document.getElementById('lightcir').src = './images/lightimg1.png';
 document.getElementById('lightzoom').src = './images/lmz1.png';
 document.getElementById('calcbtn').disabled = true;
@@ -152,11 +194,29 @@ if(pos == 3 && imCount == 0){///220-330 mm
 	document.getElementById('lightzoom').src = './images/lmz2.png';
 	document.getElementById('calcbtn').disabled = false;
 }
-else if(pos == 3 && imCount != 0){
+ if(pos == 3 && imCount == 12){
 document.getElementById('lightcir').src = './images/lightimg1.png';
 document.getElementById('lightzoom').src = './images/lmz1.png';
 document.getElementById('calcbtn').disabled = true;	
 document.getElementById('Tbtn').disabled = true;
+}
+ if(pos == 3 && imCount == 13){
+document.getElementById('lightcir').src = './images/lightimg11.png';
+document.getElementById('lightzoom').src = './images/lmz11.png';
+document.getElementById('calcbtn').disabled = true;	
+document.getElementById('Tbtn').disabled = true;
+}
+ if(pos == 3 && imCount == 14){
+document.getElementById('lightcir').src = './images/lightimg11.png';
+document.getElementById('lightzoom').src = './images/lmz111.png';
+document.getElementById('calcbtn').disabled = true;	
+document.getElementById('Tbtn').disabled = true;
+}
+if(pos == 3 && imCount != 12 && imCount != 13 && imCount != 14 && imCount != 0){
+document.getElementById('lightcir').src = './images/lightimg1.png';
+document.getElementById('lightzoom').src = './images/lmz1.png';
+document.getElementById('calcbtn').disabled = true;
+document.getElementById('Tbtn').disabled = true;	
 }
 	
 if(pos == 4 && imCount == 10){///330-440 mm
@@ -166,11 +226,35 @@ if(pos == 4 && imCount == 10){///330-440 mm
 	document.getElementById('lightzoom').src = './images/lmz2.png';
 	document.getElementById('calcbtn').disabled = false;
 }
-else if(pos == 4 && imCount != 10){
+ if(pos == 4 && imCount == 6){
 document.getElementById('lightcir').src = './images/lightimg1.png';
 document.getElementById('lightzoom').src = './images/lmz1.png';
 document.getElementById('calcbtn').disabled = true;	
 document.getElementById('Tbtn').disabled = true;
+}
+ if(pos == 4 && imCount == 7){
+document.getElementById('lightcir').src = './images/lightimg11.png';
+document.getElementById('lightzoom').src = './images/lmz11.png';
+document.getElementById('calcbtn').disabled = true;	
+document.getElementById('Tbtn').disabled = true;
+}
+ if(pos == 4 && imCount == 8){
+document.getElementById('lightcir').src = './images/lightimg11.png';
+document.getElementById('lightzoom').src = './images/lmz111.png';
+document.getElementById('calcbtn').disabled = true;	
+document.getElementById('Tbtn').disabled = true;
+}
+ if(pos == 4 && imCount == 9){
+document.getElementById('lightcir').src = './images/lightimg11.png';
+document.getElementById('lightzoom').src = './images/lmz1111.png';
+document.getElementById('calcbtn').disabled = true;	
+document.getElementById('Tbtn').disabled = true;
+}
+if(pos == 4 && imCount!=6 && imCount != 7 && imCount != 8 && imCount != 9 && imCount != 10){
+document.getElementById('lightcir').src = './images/lightimg1.png';
+document.getElementById('lightzoom').src = './images/lmz1.png';
+document.getElementById('calcbtn').disabled = true;
+document.getElementById('Tbtn').disabled = true;	
 }
 
 if(pos == 5 && imCount == 7){///440-550 mm
@@ -180,11 +264,35 @@ if(pos == 5 && imCount == 7){///440-550 mm
 	document.getElementById('lightzoom').src = './images/lmz2.png';
 	document.getElementById('calcbtn').disabled = false;
 }
-else if(pos == 5 && imCount != 7){
+ if(pos == 5 && imCount == 3){
 document.getElementById('lightcir').src = './images/lightimg1.png';
 document.getElementById('lightzoom').src = './images/lmz1.png';
 document.getElementById('calcbtn').disabled = true;	
 document.getElementById('Tbtn').disabled = true;
+}
+ if(pos == 5 && imCount == 4){
+document.getElementById('lightcir').src = './images/lightimg11.png';
+document.getElementById('lightzoom').src = './images/lmz11.png';
+document.getElementById('calcbtn').disabled = true;	
+document.getElementById('Tbtn').disabled = true;
+}
+ if(pos == 5 && imCount == 5){
+document.getElementById('lightcir').src = './images/lightimg11.png';
+document.getElementById('lightzoom').src = './images/lmz111.png';
+document.getElementById('calcbtn').disabled = true;	
+document.getElementById('Tbtn').disabled = true;
+}
+ if(pos == 5 && imCount == 6){
+document.getElementById('lightcir').src = './images/lightimg11.png';
+document.getElementById('lightzoom').src = './images/lmz1111.png';
+document.getElementById('calcbtn').disabled = true;	
+document.getElementById('Tbtn').disabled = true;
+}
+if(pos == 5 && imCount != 3 && imCount != 4 && imCount != 5 && imCount!=6 && imCount != 7){
+document.getElementById('lightcir').src = './images/lightimg1.png';
+document.getElementById('lightzoom').src = './images/lmz1.png';
+document.getElementById('calcbtn').disabled = true;
+document.getElementById('Tbtn').disabled = true;	
 }
 
 if(pos == 6 && imCount == 12){///550-660 mm
@@ -194,11 +302,23 @@ if(pos == 6 && imCount == 12){///550-660 mm
 	document.getElementById('lightzoom').src = './images/lmz2.png';
 	document.getElementById('calcbtn').disabled = false;
 }
-else if(pos == 6 && imCount != 12){
+ if(pos == 6 && imCount == 10){
 document.getElementById('lightcir').src = './images/lightimg1.png';
 document.getElementById('lightzoom').src = './images/lmz1.png';
 document.getElementById('calcbtn').disabled = true;	
 document.getElementById('Tbtn').disabled = true;
+}
+ if(pos == 6 && imCount == 11){
+document.getElementById('lightcir').src = './images/lightimg11.png';
+document.getElementById('lightzoom').src = './images/lmz111.png';
+document.getElementById('calcbtn').disabled = true;	
+document.getElementById('Tbtn').disabled = true;
+}
+if(pos == 6 && imCount != 10 && imCount != 11 && imCount != 12){
+document.getElementById('lightcir').src = './images/lightimg1.png';
+document.getElementById('lightzoom').src = './images/lmz1.png';
+document.getElementById('calcbtn').disabled = true;
+document.getElementById('Tbtn').disabled = true;	
 }
 
 if(pos == 7 && imCount == 0){///660-770 mm
@@ -208,11 +328,29 @@ if(pos == 7 && imCount == 0){///660-770 mm
 	document.getElementById('lightzoom').src = './images/lmz2.png';
 	document.getElementById('calcbtn').disabled = false;
 }
-else if(pos == 7 && imCount != 0){
+ if(pos == 7 && imCount == 12){
 document.getElementById('lightcir').src = './images/lightimg1.png';
 document.getElementById('lightzoom').src = './images/lmz1.png';
 document.getElementById('calcbtn').disabled = true;	
 document.getElementById('Tbtn').disabled = true;
+}
+ if(pos == 7 && imCount == 13){
+document.getElementById('lightcir').src = './images/lightimg11.png';
+document.getElementById('lightzoom').src = './images/lmz111.png';
+document.getElementById('calcbtn').disabled = true;	
+document.getElementById('Tbtn').disabled = true;
+}
+ if(pos == 7 && imCount == 14){
+document.getElementById('lightcir').src = './images/lightimg11.png';
+document.getElementById('lightzoom').src = './images/lmz1111.png';
+document.getElementById('calcbtn').disabled = true;	
+document.getElementById('Tbtn').disabled = true;
+}
+if(pos == 7 && imCount != 12 && imCount != 13 && imCount != 14 && imCount != 0){
+document.getElementById('lightcir').src = './images/lightimg1.png';
+document.getElementById('lightzoom').src = './images/lmz1.png';
+document.getElementById('calcbtn').disabled = true;
+document.getElementById('Tbtn').disabled = true;	
 }
 
 if(pos == 8 && imCount == 7){///770-880 mm
@@ -222,12 +360,30 @@ if(pos == 8 && imCount == 7){///770-880 mm
 	document.getElementById('lightzoom').src = './images/lmz2.png';
 	document.getElementById('calcbtn').disabled = false;
 }
-else if(pos == 8 && imCount != 7){
+ if(pos == 8 && imCount == 4){
 document.getElementById('lightcir').src = './images/lightimg1.png';
 document.getElementById('lightzoom').src = './images/lmz1.png';
 document.getElementById('calcbtn').disabled = true;	
 document.getElementById('Tbtn').disabled = true;
-}				
+}	
+ if(pos == 8 && imCount == 5){
+document.getElementById('lightcir').src = './images/lightimg11.png';
+document.getElementById('lightzoom').src = './images/lmz111.png';
+document.getElementById('calcbtn').disabled = true;	
+document.getElementById('Tbtn').disabled = true;
+}
+ if(pos == 8 && imCount == 6){
+document.getElementById('lightcir').src = './images/lightimg11.png';
+document.getElementById('lightzoom').src = './images/lmz1111.png';
+document.getElementById('calcbtn').disabled = true;	
+document.getElementById('Tbtn').disabled = true;
+}
+if(pos == 8 && imCount != 4 && imCount != 5 && imCount != 6 && imCount != 7){
+document.getElementById('lightcir').src = './images/lightimg1.png';
+document.getElementById('lightzoom').src = './images/lmz1.png';
+document.getElementById('calcbtn').disabled = true;
+document.getElementById('Tbtn').disabled = true;	
+}	
 	
 }
 
