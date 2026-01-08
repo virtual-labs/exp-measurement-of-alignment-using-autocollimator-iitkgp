@@ -124,6 +124,18 @@ if(pos == 1 && imCount == 7){///0-110 mm
 	document.getElementById('lightzoom').src = './images/lmz2.png';
 	document.getElementById('calcbtn').disabled = false;
 }
+if(pos == 1 && imCount == 2){
+document.getElementById('lightcir').src = './images/lightimg1.png';
+document.getElementById('lightzoom').src = './images/lmz1e.png';
+document.getElementById('calcbtn').disabled = true;
+document.getElementById('Tbtn').disabled = true;	
+}
+if(pos == 1 && imCount == 3){
+document.getElementById('lightcir').src = './images/lightimg1.png';
+document.getElementById('lightzoom').src = './images/lmz1f.png';
+document.getElementById('calcbtn').disabled = true;
+document.getElementById('Tbtn').disabled = true;	
+}
 if(pos == 1 && imCount == 4){
 document.getElementById('lightcir').src = './images/lightimg1.png';
 document.getElementById('lightzoom').src = './images/lmz11.png';
@@ -142,7 +154,7 @@ document.getElementById('lightzoom').src = './images/lmz1111.png';
 document.getElementById('calcbtn').disabled = true;
 document.getElementById('Tbtn').disabled = true;	
 }
-if(pos == 1 && imCount != 4 && imCount != 5 && imCount != 6 && imCount != 7){
+if(pos == 1 && imCount != 2 && imCount != 3 && imCount != 4 && imCount != 5 && imCount != 6 && imCount != 7){
 document.getElementById('lightcir').src = './images/lightimg1.png';
 document.getElementById('lightzoom').src = './images/lmz1.png';
 document.getElementById('calcbtn').disabled = true;
