@@ -23,10 +23,8 @@ However, when the object is tilted, reflected rays create an angle with incident
 
 **Working of Autocollimator**
 
-Autocollimator mainly consists of three main parts i.e. micrometer, lighting unit objective lens and target graticule. Fig. 3. shows line diagram of auto collimator. A target graticule is a fixed reference pattern (usually a crosshair) that act as the reference point for measuring angular displacements. It is placed perpendicular to the optical axis.
-
-When lamp illuminates the target graticule, light rays diverge out and is directed by a beam splitter to reach the objective lens. The light rays projected from the objective lens are parallel to the optical axis.
-
+Autocollimator mainly consists of three main parts i.e. micrometer, lighting unit objective lens and target graticule. Fig. 3. shows line diagram of auto collimator. A target graticule is a fixed reference pattern (usually a crosshair) that act as the reference point for measuring angular displacements. It is placed perpendicular to the optical axis. 
+When  lamp illuminates the target graticule, light rays diverge out and is directed by a beam splitter to reach the objective lens. The light rays projected from the objective lens are parallel to the optical axis.
 
 <div align="center">
 <img src="images/figure3.png" style="width:80%">
@@ -34,7 +32,7 @@ When lamp illuminates the target graticule, light rays diverge out and is direct
 <b>Fig. 3. Line diagram of autocollimator</b>
 </div>
 
-A flat reflector is placed in front of the objective lens, perfectly normal to the optical axis, and redirected light rays come back to their original paths. These rays meet precisely at the junction of the target graticule. A portion of the returning light travels through the beam splitter and becomes visible through the eyepiece. If the reflector is tilted, the reflected beam (deviated) is directed to the target graticule which is displaced linearly from the actual position. For example, if the reflector is tilted, by an angle (&theta;), this results in linear displacement (x) of the image which is clearly visible in the eyepiece. Linear displacement ‘x’ is proportional to the angular tilt  is given by ‘x = 2 f &theta;’. This linear displacement can be measured  by adjusting the knob of micrometer, and the corresponding micrometer displacement is recorded. The measured displacement directly corresponds to the angular change of the reflector, which is used to determine the flatness of surface. Thus, autocollimator is highly useful for verifying angular deviation, and checking small linear displacements accurately.
+A flat reflector is placed in front of the objective lens, perfectly normal to the optical axis, and redirected light rays come back to their original paths. These rays converge precisely at the intersection point of the target graticule. A portion of the returning light travels through the beam splitter and becomes visible through the eyepiece. If the reflector is tilted, the reflected beam (deviated) is directed to the target graticule which is displaced linearly from the actual position. For example, if the reflector is tilted, by an angle (&theta;), this results in linear displacement (x) of the image which is clearly visible in the eyepiece. Linear displacement ‘x’ is proportional to the angular tilt  is given by ‘x = 2 f &theta;’. This linear displacement can be measured  by adjusting the knob of micrometer, and the corresponding micrometer displacement is recorded. The measured displacement directly corresponds to the angular change of the reflector, which is used to determine the flatness of surface. Thus, autocollimator is highly useful for verifying angular deviation, and checking small linear displacements accurately.
 
 
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>								
