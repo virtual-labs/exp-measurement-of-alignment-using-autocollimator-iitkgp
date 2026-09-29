@@ -1,4 +1,4 @@
 ## Aim of the experiment
 
-Measurement of alignment using autocollimator.
+Measurement of flatness of a surface using Autocollimator.
                 
